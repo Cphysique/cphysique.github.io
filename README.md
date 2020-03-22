@@ -1,2 +1,2 @@
 # cphysique.github.io
-Simulateur pour les sciences physiques
+Simulateurs pour les sciences physiques
