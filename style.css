@@ -1,0 +1,73 @@
+form
+{
+	margin: 0 auto;
+	width: 405px;
+	padding: 1em;
+	border: 3px solid #CCC;
+	border-radius: 3em;
+}
+body
+{
+	background-color: #443333;
+	color: white;
+	margin: 25px;
+	border-radius: 3px;
+	font-family: quicksandregular, Arial, sans-serif;
+}
+header
+{
+	margin: 0.73% 0.73% 03.73% 03.73% ;
+	padding: 0.73% 0.73% 0.73% 0.73% ;
+	background-color: #ccabab;
+	color: white;
+	border-radius: 3px;
+	box-shadow: 3px 3px 5px white;
+}
+nav
+{
+	margin: 0.73% 0.73% 0.73% 0.73% ;
+	padding: 0.73% 0.73% 0.73% 0.73% ;
+	background-color: #cbcbcb;
+	color: black;
+	width: 19%;
+	float:left;
+	border-radius: 3px;
+	box-shadow: 3px 3px 5px white;
+}
+section
+{
+	margin: 0.73% 0.73% 03.3% 03.3% ;
+	padding: 0.73% 0.73% 01.73% 01.73% ;
+	background-color: #eedcfc;
+	color: black;
+	width: 73%;
+	margin-left: 24%;
+	border-radius: 3px;
+	box-shadow: 3px 3px 5px white;
+}
+article
+{
+	margin: 0.73% 0.73% 03.3% 03.3% ;
+	padding: 0.73% 0.73% 01.73% 01.73% ;
+	margin: 25px 25px 25px 25px;
+	background-color: #eedcfc;
+	color: black;
+}
+footer
+{
+	margin: 0.73% 0.73% 0.73% 0.73% ;
+	padding: 0.73% 0.73% 0.73% 0.73% ;
+	background-color: #aebeae;
+	color: blue;
+	border-radius: 3px;
+	box-shadow: 3px 3px 5px white;
+}
+#bloc_page
+{
+	width: 753px
+}
+.marge
+{
+margin-left: 5em;
+}
+

@@ -1,1 +1,193 @@
-Bienvenue sur le site de Cphysique
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css">
+	<title> Simulateurs </title>
+</head>
+
+<body>
+	<header>
+		<h2><p style="text-align:center">Simulateurs numériques pour les</p></h2>
+		<h1><p style="text-align:center">Sciences Physiques</p></h1>
+	</header>
+
+	<section>
+			<h3>Présentation</h3>
+		<article>
+			SiCP2, SiCF2 et SiTS2 sont des simulateurs numériques d'équations physiques offrant une 
+			représentation graphique et une interaction dynamique avec les paramètres physiques. 
+			Destinés à un usage pédagogique, ils permettent de visualiser le comportement des systèmes
+			physiques simulés.
+            </br>
+			Ces programmes sont écrits en C et utilisent la librairie graphique SDL 2. Une documentation 
+			LaTeX accompagne ces programmes. Elle fournit la procédure d'installation, les commandes 
+			permettant l'interaction avec les programmes, ainsi qu'un certain nombre de développements 
+			théoriques.
+		</article>
+	</section>
+
+<section>
+			<h3>Fonctionnalités</h3>
+
+		<article>
+			<h4>SiCP et SiCF</h4>
+			<ul>
+				<li>Moteur sinusoïdale, carré, impulsion.
+				<li>Conditions  aux limites libres, fixes.
+			</ul>
+		</article>
+
+		<article>
+			<h4>SiCP</h4>
+				<ul>
+					<li><b>Graphisme en 3 dimensions, déplacement du point du vue.</b>
+					<li>Simulation de l'équation de sine-gordon
+					<li>Réglage du courant josephson.
+					<li>Conditions aux limites périodiques.
+				</ul>
+		</article>
+
+		<article>
+			<h4>SiCF</h4>
+				<ul>
+					<li><b>Représentation spectrale.</b>
+					<li>Simulation et représentation de la corde vibrante.
+				</ul>
+		</article>
+
+		<article>
+			<h4>SiTS</h4>
+			SiTS simule des collisions élastique entre particules dans un espace de dimension 2
+			 et en donne une représentation graphique.
+				<ul>
+					<li>Détente de joule,
+					<li>Système isolé, système thermostaté,
+					<li>Démon de Maxwel.
+				</ul>
+		</article>
+
+</section>
+
+<section>
+		<h3>Licence</h3>
+		Les programmes disponibles sur ce dépot dont l'installation est décrite ci dessous sont 
+		régi par la licence CeCILL (telle que diffusée par le CEA, le CNRS et l'INRIA
+		sur le site "http://www.cecill.info") soumise au droit français et
+		respectant les principes de diffusion des logiciels libres.
+	<article>	<!--		TÉLÉCHARGEMENT		-->
+		
+		<h5><p style="text-align:center">Résumé de la licence</p></h5>
+
+	En contrepartie de l'accessibilité au code source et des droits de copie,
+	de modification et de redistribution accordés par cette licence, il n'est
+	offert aux utilisateurs qu'une garantie limitée. Pour les mêmes raisons,
+	seule une responsabilité restreinte pèse sur l'auteur du programme, le
+	titulaire des droits patrimoniaux et les concédants successifs.
+	A cet égard l'attention de l'utilisateur est attirée sur les risques
+	associés au chargement, à l'utilisation, à la modification et/ou au
+	développement et à la reproduction du logiciel par l'utilisateur étant
+	donné sa spécificité de logiciel libre, qui peut le rendre complexe à
+	manipuler et qui le réserve donc à des développeurs et des professionnels
+	avertis possédant des connaissances informatiques approfondies. Les
+	utilisateurs sont donc invités à charger et tester l'adéquation du
+	logiciel à leurs besoins dans des conditions permettant d'assurer la
+	sécurité de leurs systèmes et ou de leurs données et, plus généralement,
+	à l'utiliser et l'exploiter dans les mêmes conditions de sécurité.
+	Le fait que vous puissiez accéder à cet en-tête signifie que vous avez
+	pris connaissance de la licence CeCILL, et que vous en avez accepté les
+	termes.
+	</article>
+</section>
+
+
+
+<section>	<!--		POUR WINDOWS		-->
+
+		<h3>Installateur pour windows</h3>
+
+	<article>	<!--		TÉLÉCHARGEMENT		-->
+	Télécharger et exécuter les fichiers suivants :
+		<ul>
+			<li><a href="setupSiCP2.4.exe" > SiCP2.4 </a> &nbsp;&nbsp;&nbsp;  Simulateur de Chaîne de Pendule.
+			<li><a href="setupSiCF2.1.exe" > SiCF2.1 </a> &nbsp;&nbsp;&nbsp;  Simulateur de Corde et Fourier.
+			<li><a href="setupSiTS2.3.exe" > SiTS2.3 </a> &nbsp;&nbsp;&nbsp;  Simulateur de Thermodynamique Statistique.
+		</ul>
+	L'exécution de ces fichiers crée le dossier d'installation.
+	Il est possible de choisir l'emplacement de ce dossier où laisser l'emplacement implicite C:/Program Files (x86).
+	Au cours de l'installation, cocher la case permettant de créer un lien sur le bureau permettant de démarrer ces programmes.
+	</article>
+
+
+	<article>	<!--		TÉLÉCHARGEMENT		-->
+	Après l'installation, il est alors possible de changer l'icône de ces raccourcis :
+
+		<ul>
+			<li>Clique droit sur le racourci > "propriétés"
+			<li>Dans l'onglet "Raccourci" cliquer sur "Changer d'icône..."
+			<li>Cliquer sur Ok puis sur "Parcourir". Aller dans
+				<ul>
+					<li>Disque local (C:) / Program Files (x86) / SiCP2.x (ou SiTS2.x ou SiCF2.x)
+					<li>Ouvrir sicp.ico (ou sits.ico ou sicf.ico)
+				</ul>
+			<li>Cliquer sur Ok
+			<li>Cliquer sur Ok
+			<li>Cliquer sur Continuer.
+		</ul>
+	</article>
+
+</section>
+
+<section>
+		<h3>Compilation</h3>
+		La compilation des sources permet de créer un fichier optimisé pour l'architecture du microprocesseur.
+		Elle nécessite l'installation des outils de compilation.
+	<article>	<!--		TÉLÉCHARGEMENT		-->
+		
+		<h5><p style="text-align:center">Téléchargement des sources</p></h5>
+		<ul>
+			<li> <a href="https://github.com/cphysique/SiCP2/archive/master.zip" >SiCP2</a> &nbsp;&nbsp;&nbsp; Simulateur de chaîne de pendule.
+			<li> <a href="https://github.com/cphysique/SiCF2/archive/master.zip" >SiCF2</a> &nbsp;&nbsp;&nbsp; Simulateur de corde vibrante et transformé de Fourier.
+			<li> <a href="https://github.com/cphysique/SiTS2/archive/master.zip" >SiTS2</a> &nbsp;&nbsp;&nbsp; Simulateur de thermodynamique statistique.
+		</ul>
+	</article>
+		<!--		COMPILATION LINUX		-->
+	<article>
+		<h5><p style="text-align:center">Compilation sur linux</p></h5>
+		
+		<ul>
+			<li> Installer les paquets gcc, make et libsdl2-dev
+			<li> Décompresser le répertoire xxxx2-master.zip
+			<li> Dans un terminal, accéder au répertoire xxxx2-master puis lancer la commande make
+			<li> Démarrer le fichier exécutable créé : ./xxxx2
+		</ul>
+	</article>
+		<!--		COMPILATION WINDOWS		-->
+	<article>
+		<h5><p style="text-align:center">Compilation sous windows</p></h5>
+		
+		<ul>
+			<li> Installer mingw et code::block. 
+			<li> Télécharger et décompresser le modèle suivant pour les projets SDL2 <a href="Projet_SDL2_0_4_Windows_CodeBlocks.7z" > Projet_SDL2 </a>
+			<li> Dans le dossier, ouvrir avec code::block le fichier Projet_SDL2_0_4.cbp
+			<li> Supprimer le fichier main de ce projet
+			<li> Ajouter le code source du simulateur
+			<li> Construire le fichier exécutable
+			<li> Récupérer ce fichier dans debug
+			<li> Le copier dans un répertoire contenant les images bmp et le fichier SDL2.dll
+			<li> Tester l'exécution
+			<li> Déplacer le répertoire, créer un lien vers l'exécutable.
+		</ul>
+	</article>
+</section>
+
+	<footer>
+		<h6><p style="text-align:right">
+		Cphysique
+		</p></h6>
+	</footer>
+
+</body>
+</html>
