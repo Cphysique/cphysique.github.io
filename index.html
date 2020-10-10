@@ -14,6 +14,102 @@
 		<h1><p style="text-align:center">Sciences Physiques</p></h1>
 	</header>
 
+<section>	<!--		POUR WINDOWS		-->
+
+		<h3>Documentation</h3>
+
+	<article>	<!--		Documentation de SiCP2		-->
+
+		<a href="docSiCP2.4.pdf" > docSiCP2.4.pdf </a> &nbsp;&nbsp;&nbsp;  Documentation de SiCP2.
+	</article>
+
+
+		<h3>Installation manuelle pour windows</h3>
+
+	<article>	<!--		Installation manuelle pour windows		-->
+
+	Télécharger et décompresser (avec 7-Zip)
+		<ul>
+			<li><a href="SiCP2.4.4.zip" > SiCP2.4.4 </a> &nbsp;&nbsp;&nbsp;  Simulateur de Chaîne de Pendule.
+
+		</ul>
+		<ul>
+			<li><a href="SiCF2.2.1.zip" > SiCF2.2.1 </a> &nbsp;&nbsp;&nbsp;  Simulateur de Corde vibrante et spectre de Fourier.
+
+		</ul>
+
+            Le dossier contient le fichier exécutable. Il est possible de créer un lien vers l'exécutable et de changer l'icône du lien par l'image (xxxx.ico) contenue dans le dossier.
+
+		<ul>
+			<li><a href="sommeDeControle.txt" > Sommes de contrôle </a> &nbsp;&nbsp;&nbsp;  Sommes de contrôle des fichiers compressés 
+
+		</ul>
+
+	</article>
+		<h3>Installateur pour windows (Ancienne version) </h3>
+
+	<article>	<!--		TÉLÉCHARGEMENT		-->
+	Télécharger et vérifier les fichiers suivants :
+		<ul>
+			<li><a href="setupSiCP2.4.3.exe" > SiCP2.4.3 </a> &nbsp;&nbsp;&nbsp;  Simulateur de Chaîne de Pendule.
+			<br>sha256 : 5e7ab699432885be592e9d1133cfd559a9fbec7ee67ef01e78417ee7ffaa939d  setupSiCP2.4.3.exe
+			<li><a href="setupSiCF2.1.exe" > SiCF2.1 </a> &nbsp;&nbsp;&nbsp;  Simulateur de Corde et Fourier.
+			<br>sha256 : 5090e0e65ed037f414df4b96c38fbd733af10d37dc6ebcff7b620b8c7335301f  setup-SiCF2.1.exe
+			<li><a href="setupSiTS2.3.exe" > SiTS2.3 </a> &nbsp;&nbsp;&nbsp;  Simulateur de Thermodynamique Statistique.
+			<br>sha256 : 0202e7ae13c9455e1ffae2ba2b6a99a22c7cb4ba59d2a97582aa25ffdd30cfd3  setup-SiTS2.3.exe
+		</ul>
+	Désinstaller éventuellement la version précédente (dans le dossier C:/Program Files (x86)/SiCP2, lancer le fichier unins000.exe)
+<br><br>
+    Exécuter le fichiers setup,  il est possible de choisir l'emplacement de ce dossier où laisser l'emplacement implicite C:/Program Files (x86).
+<br><br>
+	Au cours de l'installation, cocher la case permettant de créer un lien sur le bureau permettant de démarrer ces programmes.
+	</article>
+
+	<!--		-->
+
+</section>
+
+
+<section>
+		<h3>Compilation sur linux</h3>
+		La compilation des sources nécessite l'installation des outils de compilation.
+	<article>	<!--		TÉLÉCHARGEMENT		-->
+		
+		<h5><p style="text-align:center">Téléchargement des sources</p></h5>
+		<ul>
+			<li> <a href="https://github.com/cphysique/SiCP2/archive/master.zip" >SiCP2</a> &nbsp;&nbsp;&nbsp; Simulateur de chaîne de pendule.
+			<li> <a href="https://github.com/cphysique/SiCF2/archive/master.zip" >SiCF2</a> &nbsp;&nbsp;&nbsp; Simulateur de corde vibrante et transformé de Fourier.
+			<li> <a href="https://github.com/cphysique/SiTS2/archive/master.zip" >SiTS2</a> &nbsp;&nbsp;&nbsp; Simulateur de thermodynamique statistique.
+		</ul>
+	</article>
+		<!--		COMPILATION LINUX		-->
+	<article>
+		<h5><p style="text-align:center">Compilation</p></h5>
+		
+		<ul>
+			<li> Installer les paquets gcc, make et libsdl2-dev
+			<li> Décompresser le répertoire xxxx2-master.zip
+			<li> Dans un terminal, accéder au répertoire xxxx2-master puis lancer la commande make
+			<li> Démarrer le fichier exécutable créé : ./xxxx2
+		</ul>
+	</article>
+		<!--		COMPILATION WINDOWS	
+	<article>
+		<h5><p style="text-align:center">Compilation sous windows</p></h5>
+		
+		<ul>
+			<li> Installer mingw et code::block. 
+			<li> Télécharger et décompresser le modèle suivant pour les projets SDL2 <a href="Projet_SDL2_0_4_Windows_CodeBlocks.7z" > Projet_SDL2 </a>
+			<li> Dans le dossier, ouvrir avec code::block le fichier Projet_SDL2_0_4.cbp
+			<li> Supprimer le fichier main de ce projet
+			<li> Ajouter le code source du simulateur
+			<li> Construire le fichier exécutable
+			<li> Récupérer ce fichier (présent dans le répertoire debug).
+			<li> Le copier dans un répertoire contenant les images bmp et le fichier SDL2.dll
+			<li> Tester l'exécution
+			<li> Déplacer le répertoire, créer un lien vers l'exécutable.
+		</ul>
+	</article>
 	<section>
 			<h3>Présentation</h3>
 		<article>
@@ -28,6 +124,8 @@
 			théoriques.
 		</article>
 	</section>
+	-->
+</section>
 
 <section>
 			<h3>Fonctionnalités</h3>
@@ -72,12 +170,12 @@
 </section>
 
 <section>
-		<h3>Licence</h3>
+		<h3>Licence</h3>	<!--		Licence		-->
 		Les programmes disponibles sur ce dépot dont l'installation est décrite ci dessous sont 
 		régi par la licence CeCILL (telle que diffusée par le CEA, le CNRS et l'INRIA
 		sur le site "http://www.cecill.info") soumise au droit français et
 		respectant les principes de diffusion des logiciels libres.
-	<article>	<!--		TÉLÉCHARGEMENT		-->
+	<article>
 		
 		<h5><p style="text-align:center">Résumé de la licence</p></h5>
 
@@ -102,114 +200,6 @@
 	</article>
 </section>
 
-
-
-<section>	<!--		POUR WINDOWS		-->
-
-		<h3>Documentation</h3>
-
-	<article>	<!--		PORTABLE		-->
-
-		<a href="docSiCP2.4.pdf" > docSiCP2.4.pdf </a> &nbsp;&nbsp;&nbsp;  Documentation de SiCP2.
-	</article>
-
-
-		<h3>Installation manuelle pour windows</h3>
-
-	<article>	<!--		PORTABLE		-->
-
-	Télécharger, vérifier et décompresser le fichier suivant :
-		<ul>
-			<li><a href="SiCP2.4.4.zip" > SiCP2.4.4 </a> &nbsp;&nbsp;&nbsp;  Simulateur de Chaîne de Pendule.
-			<br>sha256 : e84432b48f7a567b0bf3e74372ee5ff118cd1496f11098537acc82fca24d97a6  SiCP2.4.4.zip
-
-		</ul>
-            Démarrer l'exécutable contenu dans le dossier.
-<br><br>
-            Il est possible de créer un lien vers l'exécutable et de changer l'icône du lien par l'image (SiCP2.ico) contenue dans le dossier.
-
-	</article>
-		<h3>Installateur pour windows</h3>
-
-	<article>	<!--		TÉLÉCHARGEMENT		-->
-	Télécharger et vérifier les fichiers suivants :
-		<ul>
-			<li><a href="setupSiCP2.4.3.exe" > SiCP2.4.3 </a> &nbsp;&nbsp;&nbsp;  Simulateur de Chaîne de Pendule.
-			<br>sha256 : 5e7ab699432885be592e9d1133cfd559a9fbec7ee67ef01e78417ee7ffaa939d  setupSiCP2.4.3.exe
-			<li><a href="setupSiCF2.1.exe" > SiCF2.1 </a> &nbsp;&nbsp;&nbsp;  Simulateur de Corde et Fourier.
-			<br>sha256 : 5090e0e65ed037f414df4b96c38fbd733af10d37dc6ebcff7b620b8c7335301f  setup-SiCF2.1.exe
-			<li><a href="setupSiTS2.3.exe" > SiTS2.3 </a> &nbsp;&nbsp;&nbsp;  Simulateur de Thermodynamique Statistique.
-			<br>sha256 : 0202e7ae13c9455e1ffae2ba2b6a99a22c7cb4ba59d2a97582aa25ffdd30cfd3  setup-SiTS2.3.exe
-		</ul>
-	Désinstaller éventuellement la version précédente (dans le dossier C:/Program Files (x86)/SiCP2, lancer le fichier unins000.exe)
-<br><br>
-    Exécuter le fichiers setup,  il est possible de choisir l'emplacement de ce dossier où laisser l'emplacement implicite C:/Program Files (x86).
-<br><br>
-	Au cours de l'installation, cocher la case permettant de créer un lien sur le bureau permettant de démarrer ces programmes.
-	</article>
-
-	<!--		ICONES	
-	<article>
-	Après l'installation, il est alors possible de changer l'icône de ces raccourcis :
-
-		<ul>
-			<li>Clique droit sur le racourci > "propriétés"
-			<li>Dans l'onglet "Raccourci" cliquer sur "Changer d'icône..."
-			<li>Cliquer sur Ok puis sur "Parcourir". Aller dans
-				<ul>
-					<li>Disque local (C:) / Program Files (x86) / SiCP2.x (ou SiTS2.x ou SiCF2.x)
-					<li>Ouvrir sicp.ico (ou sits.ico ou sicf.ico)
-				</ul>
-			<li>Cliquer sur Ok
-			<li>Cliquer sur Ok
-			<li>Cliquer sur Continuer.
-		</ul>
-	</article>	-->
-
-</section>
-
-<section>
-		<h3>Compilation</h3>
-		La compilation des sources permet de créer un fichier optimisé pour l'architecture du microprocesseur.
-		Elle nécessite l'installation des outils de compilation.
-	<article>	<!--		TÉLÉCHARGEMENT		-->
-		
-		<h5><p style="text-align:center">Téléchargement des sources</p></h5>
-		<ul>
-			<li> <a href="https://github.com/cphysique/SiCP2/archive/master.zip" >SiCP2</a> &nbsp;&nbsp;&nbsp; Simulateur de chaîne de pendule.
-			<li> <a href="https://github.com/cphysique/SiCF2/archive/master.zip" >SiCF2</a> &nbsp;&nbsp;&nbsp; Simulateur de corde vibrante et transformé de Fourier.
-			<li> <a href="https://github.com/cphysique/SiTS2/archive/master.zip" >SiTS2</a> &nbsp;&nbsp;&nbsp; Simulateur de thermodynamique statistique.
-		</ul>
-	</article>
-		<!--		COMPILATION LINUX		-->
-	<article>
-		<h5><p style="text-align:center">Compilation sur linux</p></h5>
-		
-		<ul>
-			<li> Installer les paquets gcc, make et libsdl2-dev
-			<li> Décompresser le répertoire xxxx2-master.zip
-			<li> Dans un terminal, accéder au répertoire xxxx2-master puis lancer la commande make
-			<li> Démarrer le fichier exécutable créé : ./xxxx2
-		</ul>
-	</article>
-		<!--		COMPILATION WINDOWS		-->
-	<article>
-		<h5><p style="text-align:center">Compilation sous windows</p></h5>
-		
-		<ul>
-			<li> Installer mingw et code::block. 
-			<li> Télécharger et décompresser le modèle suivant pour les projets SDL2 <a href="Projet_SDL2_0_4_Windows_CodeBlocks.7z" > Projet_SDL2 </a>
-			<li> Dans le dossier, ouvrir avec code::block le fichier Projet_SDL2_0_4.cbp
-			<li> Supprimer le fichier main de ce projet
-			<li> Ajouter le code source du simulateur
-			<li> Construire le fichier exécutable
-			<li> Récupérer ce fichier (présent dans le répertoire debug).
-			<li> Le copier dans un répertoire contenant les images bmp et le fichier SDL2.dll
-			<li> Tester l'exécution
-			<li> Déplacer le répertoire, créer un lien vers l'exécutable.
-		</ul>
-	</article>
-</section>
 
 	<footer>
 		<h6><p style="text-align:right">

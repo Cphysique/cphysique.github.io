@@ -1,0 +1,17 @@
+Vérification de la somme de contrôle en ligne de commande dans le répertoire contenant l'archive
+
+certutil -hashfile SiCF2.2.1.zip SHA256  
+d2 d4 3f fb 27 50 b1 49 a2 bd dd ea a5 65 e4 78 9d 39 21 39 7e fd fe 9e d2 73 b1 9b 24 d0 75 0e  
+
+
+certutil -hashfile SiCP2.4.4.zip SHA256  
+e8 44 32 b4 8f 7a 56 7b 0b f3 e7 43 72 ee 5f f1 18 cd 14 96 f1 10 98 53 7a cc 82 fc a2 4d 97 a6  
+
+
+
+
+shasum -a 256 SiCF2.2.1.zip  
+d2d43ffb2750b149a2bdddeaa565e4789d3921397efdfe9ed273b19b24d0750e  
+
+shasum -a 256 SiCP2.4.4.zip  
+e84432b48f7a567b0bf3e74372ee5ff118cd1496f11098537acc82fca24d97a6  
