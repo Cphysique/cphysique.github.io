@@ -1,0 +1,20 @@
+
+certutil -hashfile SiCP2.5.3.exe SHA256
+
+82 4c ce 45 df 28 a5 81 e7 78 98 5c 2a f2 41 b4 1c e4 a0 c8 7a 8c 0a ba 8a d4 8d 3c e0 50 43 bf
+
+
+certutil -hashfile SiTS2.3.2.exe SHA256
+
+0b fc 7c 22 32 ed 02 f9 54 f2 99 45 fc 37 fa 79 e7 44 8a 97 85 6d 1d 8f eb 08 54 59 e5 0b ab cb
+
+
+
+certutil -hashfile SiCP2.5.3.7z SHA256
+
+86 21 28 89 8e 1d d9 21 d2 5e fb 95 44 15 f8 01 87 88 a2 50 96 49 4e 33 53 00 3c 74 3a 2f 22 9e
+
+
+certutil -hashfile SiTS2.3.2.7z SHA256
+
+3b 1a 04 f2 3d a6 4d a7 be d6 cd 8f 30 e3 51 a7 62 6c 7b ff f7 02 ee 7a 0e 54 f9 3b 84 18 9d 2a
